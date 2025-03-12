@@ -1,0 +1,118 @@
+/* Chat container */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Chat box (scrollable area) */
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* General message styling */
+.message {
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 16px;
+    position: relative;
+    margin: 8px 0;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+/* User message styling (right-aligned, blue bubble) */
+.user {
+    background-color: #0078ff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    padding: 12px 16px;
+    border-radius: 18px 18px 0 18px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bot message styling (left-aligned, gray bubble) */
+.bot {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+    padding: 12px 16px;
+    border-radius: 18px 18px 18px 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Timestamp styling */
+.timestamp {
+    font-size: 12px;
+    color: gray;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Input box styling */
+.input-box {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Text input field */
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #0078ff;
+}
+
+/* Send button styling */
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #005fcc;
+}
+
+/* Smooth fade-in animation for messages */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
