@@ -71,3 +71,4 @@ http://localhost:3000
 ---
 
 Feel free to customize and expand on these ideas to make the chatbot your own!
+Chatbot project is running successfully!
