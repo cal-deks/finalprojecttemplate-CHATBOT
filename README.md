@@ -9,7 +9,7 @@ This template includes:
 - Example code to demonstrate how the frontend and backend communicate.
 
 Fellows can customize the:
-1. **Frontend** to change the design and add features.
+1. **Frontend** to change the design and add features
 2. **Backend** to enhance the bot’s logic or connect to APIs/AI models.
 
 
