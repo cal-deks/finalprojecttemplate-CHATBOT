@@ -6,7 +6,7 @@ Welcome to the Chatbot Template! This project provides a starter template for bu
 This template includes:
 - A **React frontend** with a basic chat interface.
 - A **Flask backend** that processes user messages.
-- Example code to demonstrate how the frontend and backend communicate.
+- Example code to demonstrate how the frontend and backend communicate
 
 Fellows can customize the:
 1. **Frontend** to change the design and add features
